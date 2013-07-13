@@ -72,11 +72,17 @@ if(require.main == module) {
     .option('-u, --url <url>', 'url of html file')
         .parse(process.argv);
 
+      //console.log(program.url)
+
       rest.get(program.url).on('complete', function(result) {
           var checkJson = checkHtmlFile(result, program.checks);
           var outJson = JSON.stringify(checkJson, null, 4);
           console.log(outJson);
             });
+
+        // var checkJson = checkHtmlFile(program.file, program.checks);
+        //  var outJson = JSON.stringify(checkJson, null, 4);
+        //  console.log(outJson);
 
 } else {
     exports.checkHtmlFile = checkHtmlFile;
