@@ -2,112 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Chaiken</title>
+    <title>BlackBox</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta name="description" content="Talk. Text. Email. Protection.">
 
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <meta name="author" content="The Mad Scientist: Brad Chaiken">
 
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css"> 
-
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
-
-    <style type="text/css">
-
-      /* Large desktop */
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
-      }
-
-      /* Landscape phones and down */
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
-
-      /* All form factors */
-
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
-
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
-
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
+    <!-- Le styles -->
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link rel='stylesheet' id='prettyphoto-css'  href="prettyPhoto.css" type='text/css' media='all'>
+    
+    <!-- Google Fonts call. Font Used Open Sans & Poly -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poly' rel='stylesheet' type='text/css'>    
+    
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
+    <link href="bootstrap-responsive.css" rel="stylesheet">
 
-    <script type="text/javascript">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="jquery.js"></script>
+    
+    <!-- prettyPhoto Initialization -->
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function(){
+      $("a[rel^='prettyPhoto']").prettyPhoto();
+    });
+  </script>
+
+  <script type="text/javascript">
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-42856759-1']);
@@ -120,277 +60,325 @@
   })();
 
 </script>
+  
   </head>
-  <body>
 
+  <body>
+  <!--
+    
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <button type="button" class="btn btn-navbar"
-                  data-toggle="collapse" data-target=".nav-collapse">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="#">BlackBox</a>
+          </a>
+          <a class="brand" href="#">Simple & Flat</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="#">Home</a></li>
-              <li><a href="#myModal" data-toggle="modal">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
-
-    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              <h3 id="myModalLabel">Modal Heading</h3>
-            </div>
-            <div class="modal-body">
-              <h4>Text</h4>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
-
-              <h4>Text</h4>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
-
-              <h4>Text</h4>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.</p>
-
-              <hr>
-
-              <h4>Description</h4>
-              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-              <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-            </div>
-            <div class="modal-footer">
-              <button class="btn" data-dismiss="modal">Close</button>
-              <button class="btn btn-success">Contribute</button>
-            </div>
-          </div>
-
-    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
-    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
-    <!-- http://stackoverflow.com/a/12270322 -->
-    <div class="container">
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>BlackBox</h1>
-          <p>
-          <h2><i><font color="red">Truly Secure</font></i> Mobile Voice, Text and Email Communications.</h2>
-        </div>
-      </div> 
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">For a more secure, "You".</p>
-        </div>
+-->
+    <!-- Header Image and Logo -->
+  <div id="headerwrap">
+      <header class="clearfix">
+        <center>
+          <img class="logo" src="img/talk.svg">
+          <h1 class="brand" style="color:#ec602f;"><b>WELCOME TO</b></h1>
+          <h1 class="brand" style="color:#ec602f;"><b>BLACKBOX</b></h1>
+        </center>
+      </header>
+      <br />
+      <br />
+  </div>
+  
+    <!-- Welcome -->
+  <div id="welcomewrap">
+    <header class="clearfix">
+      <div class="container">
+      <div class="span12">
+        <h2>Our goal is simple, "Provide better solutions for Information Security".</h2>
       </div>
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="/images/security.jpg">
-        </div>
+      </div>
+    </header>
+  </div>
 
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-          <div class="span8 offset2">
-            <div class="statistics">
-              <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
-                <div class="linediv-l">
-                <h3>6</h3> <p>backers</p>
-                </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $75,000</p>
-                </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-r">
-                <h3>180</h3> <p>days left</p>
-                </div>
-              </div>
-            </div>
+    <!-- Section Services Begins -->
+  <section id="services"><br><br></section>
+
+  <div id="servicewrap">
+    <div class="container">
+      <h2>The Technology</h2>
+      <br>
+      <div class="row">
+        <div class="span3">
+          <div class="mask">
+            <img src="img/step1.png" alt="">
+            <h4>Talk</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
           </div>
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: .8%;"></div>
-              <div class="bar bar-warning" style="width: 99.2%;"></div>
-            </div>
+        </div><!-- span3 -->
+        
+        <div class="span3">
+          <div class="mask">
+            <img src="img/step2.png" alt="">
+            <h4>Text</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
           </div>
-          <div class="span6 offset3 order">
-             <a class="coinbase-button" 
+        </div><!-- span3 -->
+        
+        <div class="span3">
+          <div class="mask">
+            <img src="img/step3.png" alt="">
+            <h4>Email</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div><!-- span3 -->
+
+        <div class="span3">
+          <div class="mask">
+            <img src="img/step4.png" alt="">
+            <h4>Privacy</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </div><!-- span3 -->
+      </div><!-- row -->
+    </div><!-- container -->
+  </div><!-- servicewrap -->
+
+  <!-- Introduction Text and Responsive Image -->
+    <div class="container">
+    <br>
+    <br>
+    <hr>
+      <div class="row">
+        <br>
+        <br>
+        <div class="span6">
+          <h1>WE'LL KEEP IT SIMPLE, WHILE KEEPING IT SECURE</h1>
+          <h2>We are Developers, Security Professionals and Engineers. Most Importantly, we are technology USERS. We understand the importance of ease of usibility, functionality, but more especially...Security.</h2>
+        </div><!-- span6 -->
+        <div class="span6">
+          <img class="meninblack" src="img/meninblack.png" alt="">
+        </div><!-- span6 -->
+      </div><!-- row -->
+    <br>
+    <br>
+    </div> <!-- /container -->
+    
+  <!-- About Section Begins -->   
+      <section id="about"><br><br></section>
+      <div id="aboutwrap">
+        <div class="container">
+        <hr>
+        <div class="row">
+          <div class="span4">
+            <h3>Meet the founders.</h3>
+            <h4>Upon a successfull crowed fund campaign, this project will be completed.</h4>
+
+             <h2>Backers</h2>
+             <p><h3>6</h3></p>
+                
+             <h2>Of $75,000</h2>
+             <p><h3>$6000</h3></p>
+               
+             <h2>Days left</h2>
+             <p><h3>180</h3></p>
+             <div class="progress progress-striped">
+              <div class="progress-bar progress-bar-success" style="width: .8%"></div>
+              <div class="progress-bar progress-bar-warning" style="width: 99.2%;"></div>
+            </div>
+            <a class="coinbase-button" 
             data-button-style="custom_large"
             data-button-text="Preorder with Bitcoin"
             data-code="41a86e20ad7a5866ae92c24f65e74eaa" data-button-style="custom_large" href="https://coinbase.com/checkouts/41a86e20ad7a5866ae92c24f65e74eaa">Preorder With Bitcoin</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+          
+          </div><!-- span4 -->
+          
+          <div class="span4">
+            <div class="about_item">
+              <div class="about_item_center">
+                <img src="img/photo1.jpg" alt="">
+                <div class="clear"></div>
+                        <h3>Brad Chaiken</h3>
+                        <p>Brad is currently completing Degrees for Information Systems Management and Information Security from Wayne State University (Detroit, MI) and is active in both the Start Up and Hacker communities.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              </div>
+            </div><!-- about_item -->
+          </div><!-- span4 -->
+          
+          <div class="span4">
+            <div class="about_item">
+              <div class="about_item_center">
+                <img src="img/photo2.jpg" alt="">
+                <div class="clear"></div>
+                        <h3>Jennifer Chaiken</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+              </div>
+            </div><!-- about_item -->
+          </div><!-- span4 -->
+          
+        </div><!-- End Row -->
+        </div><!-- End aboutwrap -->
+    </div><!-- End Container -->
+    
+    <!-- Studio Carousel and Quote -->
+    <div class="container">
+    <br>
+    <hr>
+    <br>
+    <br>
+    </div><!-- End Container -->
+
+  <!-- Project Section Begins -->
+      <section id="projects"></section>
+      
+    <div id="projectwrap">     
+    <div class="container">
+    <header class="clearfix">
+          <div class="container">
+            <div class="span11">
+              <div class="boxcolor">
+              <h1>LATEST PROJECTS</h1>
+              </div>
+            </div><!-- span12 -->
+          </div><!-- container -->
+        </header>
+      <br>
+      <br>
+    </div><!-- End Container -->
+        
+    </div><!-- projectwrap -->
+    
+      <div id="projectwrap_2">
+      <div class="container">
+      <br>
+      <br>
+      <h2>PROJECTS SHOTS</h2>
+        <div class="row">
+          <br>
+          <div class="span4">
+            <div class="project_item">
+              <div class="project_item_center">
+                <div class="mask2">
+                  <a href="img/pr01.jpg" rel="prettyPhoto"><img src="img/pr01.jpg" alt=""></a>
+                </div>
+                <div class="clear"></div>
+                        <h3></h3>
+              </div><!-- project_item_center -->
+            </div><!-- project_item -->
+          </div><!-- span4 -->
+          
+          <div class="span4">
+            <div class="project_item">
+              <div class="project_item_center">
+                <div class="mask2">
+                  <a href="img/pr02.jpg" rel="prettyPhoto"><img src="img/pr02.jpg" alt=""></a>
+                </div>
+                <div class="clear"></div>
+                        <h3></h3>
+              </div><!-- project_item_center -->
+            </div><!-- project_item -->
+          </div><!-- span4 -->
+          
+          <div class="span4">
+            <div class="project_item">
+              <div class="project_item_center">
+                <div class="mask2">
+                  <a href="img/pr03.jpg" rel="prettyPhoto"><img src="img/pr03.jpg" alt=""></a>
+                </div>
+                <div class="clear"></div>
+                        <h3></h3>
+              </div><!-- project_item_center -->
+            </div><!-- project_item -->
+          </div><!-- span4 -->
+          
+        </div><!-- row -->
+        <br>
+        <hr>
+      </div><!-- container -->
+    </div><!-- projectwrap2 -->
+    
+  <!-- Clients Logo -->   
+    <div class="container">
+      <div class="row">
+        <div class="clients">
+          <h2>Some of our amazing backers</h2>
+          <div class="span1"></div>
+          <div class="span2">
+            <img src="img/cnet.png" alt="">
           </div>
-          <div class="span8 offset2 social">
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+          <div class="span2">
+            <img src="img/billboard.png" alt="">
           </div>
-        </div>
-      </div>
+          <div class="span2">
+            <img src="img/mashable.png" alt="">
+          </div>
+          <div class="span2">
+            <img src="img/techcrunch.png" alt="">
+          </div>
+          <div class="span2">
+            <img src="img/variety.png" alt="">
+          </div>
+          <div class="span1"></div>
+        </div><!-- clients -->
+      </div><!-- row -->
+        <br>
+        <br>
+        <br>
+    </div><!-- container -->
+    
+  <!-- Contact Section Begins -->
+    <section id="contact"><br><br></section>
 
-      <div class="row-fluid section1">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="/images/identity.png">
-        </div>
-        <div class="span5 copy">
-          <p>
-            Cyber security, data theft and monitoring are heavily on the rise world wide.
-            Our global economy now depends on high speed data transmission for communication, 
-            however, often times this data is compromised and intercepted
-            during transit by hackers, data and identity theives.
-            <b>This has become especially true for mobile devices</b>.
-            HackSurfer.com reports on the staggering number of mobile hacks and data theft 
-            attempts that are tried each day, with numbers reaching into the millions world wide.
-            <b><i>But Hackers arent the only ones!</i></b> Government agencies are now admitting
-            to tapping into various data streams to collect information on private citizens, as well
-            as business entities. <b>Do you want your data to fall into just anyones hands?</b>
-          </p>
-        </div>
-      </div>
-
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            BlackBox is currently in the development phase for all major mobile 
-            operating systems. BlackBox gaurentees <b>Privacy</b> by encrypting
-            and sending your data over a secured network. BlackBox takes the worry 
-            out of privacy concerns by allowing the safe transmission and retrieval
-            of only the communications that you want, to only the recipients that you want!
-            Yes, this also includes voice! There are no strings attached. Simply download, 
-            set up your networks and communicate without worry. It's that simple.
-            All of the rest is handled within the app, and only those that have the app and your
-            key will be able to connect to you.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="/images/ubuntu.jpg">
-        </div>
-      </div>
-      <!--
-      <div class="row-fluid">
-        <div class="span12">
-          <center><img class="img-polaroid" src="/images/android-security.png"></center>
-        </div>
-      </div>
-      -->
-
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseOne">
-                    What is BlackBox?
-                  </a>
-                </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    BlackBox is a mobile application that secures and transmitts your sensitive data over
-                    an encrypted network.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseTwo">
-                    How does it work?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    BlackBox uses sophiticated encryption algorithms to scramble your data before it transmits it as many little seperate encrypted packages. Only your intended recipients will be able to decipher and read your communications.
-                    <hr />
-                    BlackBox Application users can ensure that their Voice, Text and Email data is truly secured because only BlackBox users can recieve and unencrypt the data that is sent. Those recipients are controlled by YOU, with a unique key for every Blackbox "Network". 
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseThree">
-                    What does it cost?
-                  </a>
-                </div>
-                <div id="collapseThree" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Nothing. We at BlackBox beleive that everyone should have the right to private and professional personal security.
-                    Our efforts are to continue to develop, release and support a truly secure, truly free software application to provide YOU peice of mind.
-                    <hr />
-                    For Business Solutions, the BlackBox team is currently developing packages for on going, large scale BlackBox Application Networks that include added (non-public) widgets, set up, training (on-line or live employee seminar), and 24-hour support should you have a concern or question.    
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseFour">
-                    What do sponsors get then?
-                  </a>
-                </div>
-                <div id="collapseFour" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    Our sponsors will receive an invitation to beta test the BlackBox pre-release, as well as exclusive content downloads, updates and personal app support for life. And of course, The BlackBox Application!
-                    <hr />
-                    For Business Solutions, the BlackBox Team will provide Applications for your Companies entire Executive Suite. This encludes free set up, training and lifetime support of all of our products for your BlackBox network as well as current and future updates.   
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse"
-                     data-parent="#accordion2" href="#collapseFive">
-                    What Operating Systems is it currently in development for?
-                  </a>
-                </div>
-                <div id="collapseFive" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    BlackBox is currently in development for Android, Chrome OS and the long awaited Ubuntu Mobile OS, currently set to launch later this year.
-                    <hr />
-                    This is why we need YOUR HELP. In order to target all of the major mobile OS platforms and truly make BlackBox a unique and sophisticated experience for our users, development expenses must be met. Please contact us anytime with your questions. 
-                    <hr />
-                    We look forward to working with you...To, "Protecting You". -<i>Team BlackBox</i>.     
-                  </div>
-                </div>
-              </div>
+    <div id="footerwrap">
+      <div class="container">
+      <br>
+      <h2>CONTACT</h2>
+        <div class="row">
+          <div class="span4">
+            <!--<img src="img/logo_small.png" alt="">-->
+            <h3>Where in the world is BlackBox HQ?</h3>
+            <h4>We are proudly loctated in:</h4>
+            <h4>Detroit, Michigan.</h4>
+          </div><!-- span4 -->
+          
+          <div class="span4">
+            <img src="img/twitter.png" alt="">
+            <div id="jstwitter" class="clearfix">
+            <p id="twitter_update_list"></p>
             </div>
-          </div>
-      </div>
+            <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script><!-- Script Needed to load the Tweets -->
+            <script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline/wrapbootstrap.json?callback=twitterCallback2&count=1"></script>
+            <h4></h4>
+          </div><!-- span4 -->
+          
+          <div class="span4">
+            <h3>adaptdevlabs@gmail.com</h3>
+          </div><!-- span4 -->
 
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
-        </div>
-      </div>
-    </div>
-    <script>
+        </div><!-- row -->
+      </div><!-- container -->
+    </div><!-- footerwrap -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="bootstrap.js"></script>
+    <script type="text/javascript" src="jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="theme.js"></script>
+    
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -402,3 +390,4 @@
 </script>
   </body>
 </html>
+
