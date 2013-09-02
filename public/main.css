@@ -132,7 +132,7 @@ hr {
 /********** HEADER WRAP **********/
 #headerwrap {
     width: 100%;
-    background: url('img/topbg5.jpg') no-repeat center center fixed; 
+    background: url('/topbg5.jpg') no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -232,7 +232,7 @@ hr {
 /********** PROJECT WRAP **********/
 #projectwrap {
     width: 100%;
-    background: url('img/suit.jpg') no-repeat center center fixed; 
+    background: url('/suit.jpg') no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
