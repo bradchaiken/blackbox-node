@@ -173,7 +173,7 @@ hr {
 /********** SERVICE WRAP **********/
 #servicewrap {
 	display:block;
-	text-align:left;
+	text-align:center;
 }
 
 #servicewrap h2 {
@@ -184,6 +184,11 @@ hr {
 }
 
 #servicewrap p {
+	text-align:left;
+}
+
+#servicewrap_2 {
+	display:block;
 	text-align:left;
 }
 
