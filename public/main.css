@@ -137,9 +137,9 @@ hr {
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;;
-    min-height: 600px;
+    min-height: 625px;
     margin-top: -60px;
-    padding-top:80px;
+    padding-top:75px;
     text-align:center;
 }
 
