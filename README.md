@@ -9,11 +9,11 @@ Please make sure that you have satisfied the requirements for Node.js, as found 
 
 Then:
 
-  Clone the application,
-  CD into the project root folder, 'blackbox-node',
-  npm install commander,
-  npm install cheerio,
-  Run: foreman start,
+  Clone the application |
+  CD into the project root folder, 'blackbox-node' |
+  npm install commander |
+  npm install cheerio |
+  Run: foreman start |
   Navigate to: localhost:5000
   
 
