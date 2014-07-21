@@ -20,8 +20,7 @@ Then:
 To run specs
 ============
 
-CD into /public,
-Run: ./grader.js --checks checks.json --url http://blackbox-comm.herokuapp.com/
+CD into /public | Run: ./grader.js --checks checks.json --url http://blackbox-comm.herokuapp.com/
 
 Expected output:
 
