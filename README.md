@@ -1,7 +1,7 @@
 blackbox-node
 =============
 
-Concept application for Coursera's 'Startup Engineering' course. Fall 2013. Demo: http://blackbox-comm.herokuapp.com/
+Concept application for Coursera's 'Startup Engineering' course (Fall, 2013). Built on node, this application also ties into coinbase and excepts bitcoin. Demo: http://blackbox-comm.herokuapp.com/
 
 To initialize locally:
 
